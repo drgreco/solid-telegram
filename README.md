@@ -11,7 +11,7 @@ Both kops and terraform have a little setup. kops needs an environment variable,
 ### Creating your cluster
 
 Create your cluster with kops as normal
-`kops create cluster --zones us-east-1a solid-telegram.api.zvelo.com`
+```kops create cluster --zones us-east-1a solid-telegram.api.zvelo.com```
  * list clusters with: kops get cluster
  * edit this cluster with: kops edit cluster solid-telegram.api.zvelo.com
  * edit your node instance group: kops edit ig --name=solid-telegram.api.zvelo.com nodes
@@ -59,4 +59,4 @@ terraform destroy
 then, delete with kops
 
 
-`kops delete --name solid-telegram.api.zvelo.com`
+```kops delete --name solid-telegram.api.zvelo.com```
